@@ -1,0 +1,32 @@
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .search-bar {
+    width: 60%;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #333;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease all;
+    outline: none;
+  }
+  
+  .search-bar::placeholder {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .search-bar:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    color: #000;
+  }
+  

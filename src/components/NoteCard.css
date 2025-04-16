@@ -1,0 +1,253 @@
+/* Reset and basic styles for the entire app */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  background: linear-gradient(135deg, #f8d0e6, #ffefcb); /* Soft pastel gradient */
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  color: #ff6f61;
+}
+
+.logout-btn {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #e54b45;
+}
+
+/* Add note section */
+.add-note-section {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.add-note-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-note-btn:hover {
+  background-color: #e54b45;
+}
+
+/* Notes Grid Layout */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Style for individual note cards */
+.note-card-container .note-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.note-card h3 {
+  font-size: 20px;
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.note-card p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Position buttons inside the card */
+.note-card .edit-btn,
+.note-card .delete-btn,
+.note-card .pin-btn {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effects for buttons */
+.note-card .edit-btn {
+  background-color: #4caf50;
+}
+
+.note-card .delete-btn {
+  background-color: #f44336;
+}
+
+.note-card .pin-btn {
+  background-color: #ffd700;
+}
+
+.note-card button:hover {
+  background-color: #e54b45;
+}
+
+.note-card .edit-btn:hover {
+  background-color: #45a249;
+}
+
+.note-card .delete-btn:hover {
+  background-color: #e53935;
+}
+
+.note-card .pin-btn:hover {
+  background-color: #e0a500;
+}
+
+/* Note content section */
+.note-card .note-content {
+  margin-top: 20px;
+}
+
+/* Search Bar Styling */
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #ff6f61;
+}
+/* Edit Button Styles */
+/* Edit Button Styles */
+.note-card .edit-btn {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Edit Button */
+.note-card .edit-btn:hover {
+  background-color: #45a249; /* Darker green */
+}
+.note-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.title-header {
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-size: 36px; /* Size of the text */
+  font-weight: bold; /* Bold text */
+  color: #2C3333; /* Dark color for text */
+  text-align: center; /* Center the text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Space between letters */
+  margin: 30px 0; /* Margin for spacing */
+  background: linear-gradient(to right, #7B9D96, #FF8F8F); /* Darker gradient */
+  -webkit-background-clip: text; /* Text gradient effect */
+  color: transparent; /* Make text transparent to show gradient */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+

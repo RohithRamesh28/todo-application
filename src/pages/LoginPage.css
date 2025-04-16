@@ -1,0 +1,141 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f8d0e6, #ffefcb); /* Soft pastel gradient */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-card {
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 25px; /* Rounded corners for a soft feel */
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 36px;
+    color: #ff6f61; /* Cute pink color */
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .login-subtitle {
+    color: #8a8a8a; /* Soft gray */
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #f7d9e1; /* Light pastel pink */
+    border: 1px solid #f0b7a1;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .input-container input:focus {
+    outline: none;
+    border-color: #ff6f61; /* Cute pink */
+    box-shadow: 0px 0px 8px rgba(255, 111, 97, 0.4);
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #f0a1b7; /* Soft pink */
+    font-size: 14px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input-container input:focus ~ label,
+  .input-container input:valid ~ label {
+    top: -8px;
+    font-size: 12px;
+    color: #ff6f61; /* Cute pink */
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff6f61; /* Cute pink */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #e54b45; /* Darker pink on hover */
+    transform: translateY(-3px);
+  }
+  
+  .signup-link {
+    color: #8a8a8a; /* Soft gray */
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #ff6f61; /* Cute pink */
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .cute-icon {
+    margin-top: 20px;
+  }
+  
+  .cute-icon img {
+    width: 100px; /* Cute koala icon */
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
