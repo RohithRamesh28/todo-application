@@ -1,3 +1,4 @@
+Hi, this is the front of the repo(which holds the backend of the project) named: https://github.com/RohithRamesh28/secure-notes-fullstack/tree/master After clonning and installing all the required packages and intructions done below, Please clone this repo mentioned above.
 🎨 How to Run the Frontend (React JS)
 Step 1: Clone and Enter the Project Folder
 Alright, first up — clone this repo if you haven’t already:
